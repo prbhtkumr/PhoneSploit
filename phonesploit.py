@@ -8,6 +8,7 @@ import time as t
 from colorama import Fore, init
 import sys
 
+print('hello')
 #=============================
 # Variables
 CurrentDir = os.path.dirname(os.path.abspath(__file__))
