@@ -30,13 +30,9 @@ A tool for remote ADB exploitation in Python3.
 
 # PhoneSploit 
 
-
 Using open Adb ports we can exploit a device
 <br>
 > You can find open ports [here at Shodan](https://www.shodan.io/search?query=android+debug+bridge+product%3A”Android+Debug+Bridge”)
-<br>
-<br> To find out how to access a local device
-<br>
 <br>
 <br>
 
