@@ -37,15 +37,27 @@ Using open Adb ports we can exploit a device
 <br> To find out how to access a local device
 <br>
 <br>
-#YouTube Videos
+<br>
+
+# YouTube Videos
+
+<br>
+<br>
+### Connecting device via ADB
+<br>
 
 [![Connecting device via ADB](https://img.youtube.com/vi/OlhCAX1qBQo/0.jpg)](http://www.youtube.com/watch?v=OlhCAX1qBQo)
 
-
+<br>
+<br>
+### Exploiting ADB via PhoneSploit
+<br>
 
 [![Exploiting ADB via PhoneSploit](https://img.youtube.com/vi/ONHxcGMdkM0/0.jpg)](http://www.youtube.com/watch?v=ONHxcGMdkM0)
 
-
+<br>
+<br>
+<br>
 
 # HOW TO INSTALL ON WINDOWS
 ```
