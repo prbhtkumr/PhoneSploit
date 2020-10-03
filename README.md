@@ -23,12 +23,11 @@ A tool for remote ADB exploitation in Python3.
 * Get Battery Status
 * Get Current Activity
 
-#Credits
+# Credits
 <br> Original code by https://github.com/metachar/PhoneSploit
 <br>
 
 # PhoneSploit 
-
 
 
 Using open Adb ports we can exploit a device
@@ -43,14 +42,18 @@ Using open Adb ports we can exploit a device
 
 <br>
 <br>
+
 ### Connecting device via ADB
+
 <br>
 
 [![Connecting device via ADB](https://img.youtube.com/vi/OlhCAX1qBQo/0.jpg)](http://www.youtube.com/watch?v=OlhCAX1qBQo)
 
 <br>
 <br>
+
 ### Exploiting ADB via PhoneSploit
+
 <br>
 
 [![Exploiting ADB via PhoneSploit](https://img.youtube.com/vi/ONHxcGMdkM0/0.jpg)](http://www.youtube.com/watch?v=ONHxcGMdkM0)
