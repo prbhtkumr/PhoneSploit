@@ -23,6 +23,10 @@ A tool for remote ADB exploitation in Python3.
 * Get Battery Status
 * Get Current Activity
 
+# Author's Note
+
+#### Don't do Bad Things ya Guys :kissing::v:
+
 # Credits
 <br> Original code by https://github.com/metachar/PhoneSploit
 <br>
