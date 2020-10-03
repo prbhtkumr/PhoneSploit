@@ -32,7 +32,8 @@ A tool for remote ADB exploitation in Python3.
 
 
 Using open Adb ports we can exploit a device
-<br> you can find open ports [here](https://www.shodan.io/search?query=android+debug+bridge+product%3A”Android+Debug+Bridge”)
+<br>
+> You can find open ports [here at Shodan](https://www.shodan.io/search?query=android+debug+bridge+product%3A”Android+Debug+Bridge”)
 <br>
 <br> To find out how to access a local device
 <br>
