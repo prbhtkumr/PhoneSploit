@@ -27,13 +27,7 @@ A tool for remote ADB exploitation in Python3.
 
 #### Don't do Bad Things ya Guys :kissing::v:
 
-
-#  
-<br>
 > You can find open ports on the Internet [here at Shodan](https://www.shodan.io/search?query=android+debug+bridge+product%3A”Android+Debug+Bridge”)
-<br>
-#
-<br>
 
 # YouTube Videos
 <br>
