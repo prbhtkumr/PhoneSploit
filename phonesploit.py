@@ -486,7 +486,7 @@ def main():
         print (page_1)  
 
     elif option == '99':
-        exit()
+        sys.exit()
 
 def main_linux():
 
@@ -501,7 +501,7 @@ def main_linux():
     if device_name == '':
         main()
     if device_name == '99':
-        exit()
+        sys.exit()
     os.system("adb connect "+device_name+":5555")
     option = input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
 
@@ -788,7 +788,7 @@ def main_linux():
             option = input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
 
         elif option == '99':
-            exit()
+            sys.exit()
             break
         else:
             os.system("error: invalid menu option")
