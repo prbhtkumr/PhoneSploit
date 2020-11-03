@@ -466,7 +466,7 @@ def main():
         
     elif option == '0':
         global page2
-        if page2 == True:
+        if page2 is True:
             cls(page_2)
         else:
             cls(page_1)
@@ -764,7 +764,7 @@ def main_linux():
 
         elif option == '0':
             global page2
-            if page2 == True:
+            if page2 is True:
                 clear(page_2)
                 option = input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
             else:
