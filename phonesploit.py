@@ -3,7 +3,6 @@
 
 import os
 import random
-import urllib3
 import time as t
 from colorama import Fore, init
 import sys
