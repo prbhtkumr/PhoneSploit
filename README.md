@@ -59,7 +59,7 @@ extract adb.rar to the phonesploit directory
 ```
 cd PhoneSploit
 pip install colorama
-main.py
+phonesploit.py
 ```
 
 # HOW TO INSTALL ON Linux
@@ -67,7 +67,7 @@ main.py
 git clone https://github.com/01010000-kumar/PhoneSploit
 cd PhoneSploit
 pip3 install colorama
-python3 main_linux.py
+python3 phonesploit.py
 ```
 
 # HOW TO INSTALL ON macOS
@@ -77,7 +77,7 @@ brew install git python@3
 git clone https://github.com/01010000-kumar/PhoneSploit
 cd PhoneSploit
 python3 -m pip install colorama
-python3 main_linux.py
+python3 phonesploit.py
 ```
 
 # IF ADB NOT FOUND
