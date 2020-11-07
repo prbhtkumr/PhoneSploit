@@ -67,6 +67,7 @@ main.py
 git clone https://github.com/01010000-kumar/PhoneSploit
 cd PhoneSploit
 pip3 install colorama
+python3 main_linux.py
 ```
 
 # HOW TO INSTALL ON macOS
