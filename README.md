@@ -54,7 +54,9 @@
 # HOW TO INSTALL ON WINDOWS
 ```
 git clone https://github.com/01010000-kumar/PhoneSploit
+```
 extract adb.rar to the phonesploit directory 
+```
 cd PhoneSploit
 pip install colorama
 main.py
