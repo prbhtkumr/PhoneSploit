@@ -64,6 +64,7 @@ phonesploit.py
 
 # HOW TO INSTALL ON Linux
 ```
+apt install adb
 git clone https://github.com/01010000-kumar/PhoneSploit
 cd PhoneSploit
 pip3 install colorama
