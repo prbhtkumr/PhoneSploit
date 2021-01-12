@@ -94,7 +94,7 @@ sudo apt install android-tools-adb android-tools-fastboot
 <br>
 <br>
 
-# PhoneSploit Framework disclaimer
+# PhoneSploit Framework Disclaimer
 Usage of the PhoneSploit Framework for attacking targets without prior mutual consent is illegal.
 It is the end user's responsibility to obey all applicable local, state, federal, and international laws.
 Developers assume no liability and are not responsible for any misuse or damage caused by this program.
