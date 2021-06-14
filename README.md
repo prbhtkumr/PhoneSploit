@@ -1,6 +1,12 @@
 # PhoneSploit
 #### A tool for remote ADB exploitation in Python3.
 
+![STARS](https://img.shields.io/github/stars/aerosol-can/PhoneSploit?style=social) 
+![FORKS](https://img.shields.io/github/forks/aerosol-can/PhoneSploit?style=social)
+![CC](https://img.shields.io/badge/license-cc--by--sa--4.0--Licence-blue) 
+![COMMIT](https://img.shields.io/github/last-commit/aerosol-can/PhoneSploit)
+![SIZE](https://img.shields.io/github/repo-size/aerosol-can/PhoneSploit)
+
 # Features
 * Access Shell
 * Screen record victim device
