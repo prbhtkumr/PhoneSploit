@@ -222,7 +222,7 @@ def main():
             os.system("adb -s  "+device_name+" install "+apk_location)
             print(Fore.GREEN + "Apk has been installed.")
 
-        case'6':
+        case '6':
             print(
                 ("\n[{0}+{1}]Enter a device name.").format(Fore.RED, Fore.WHITE))
             device_name = input(arrow + "phonesploit"+Fore.RED +
