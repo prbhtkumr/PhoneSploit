@@ -814,7 +814,7 @@ platform = get_platform()
 #=============================  
 # Run
 
-if platform is 'Windows':
+if platform == 'Windows':
     try:
         init(convert=True)
         os.chdir(CurrentDir+"//adb")
