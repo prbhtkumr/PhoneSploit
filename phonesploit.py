@@ -158,7 +158,7 @@ page_1 = '''\n
 '''.format(Fore.CYAN, Fore.RED, Fore.GREEN)
 
 page_2 = '''\n
-{0}[{1}16{0}]{2} Port Forwarding                {0}[{1}21{0}]{2} NetStat 
+{0}[{1}16{0}]{2} Port Forwarding                {0}[{1}21{0}]{2} NetStat                    {0}[{1}26{0}]{2} Send file/folder from PC to Phone
 {0}[{1}17{0}]{2} Grab wpa_supplicant            {0}[{1}22{0}]{2} Turn WiFi On/Off                 
 {0}[{1}18{0}]{2} Show Mac/Inet                  {0}[{1}23{0}]{2} Remove Password
 {0}[{1}19{0}]{2} Extract apk from app           {0}[{1}24{0}]{2} Use Keycode            
@@ -462,7 +462,18 @@ def main():
         device_name = input(arrow + "phonesploit"+Fore.RED + "(current_activity) "+Fore.WHITE + "> ")
         os.system("adb -s " +device_name+ " dumpsys activity")
         main()
-        
+    
+    elif option == '26':
+            print (("\n[{0}+{1}]Enter a device name.").format(Fore.RED, Fore.WHITE))
+            device_name = input(arrow + "phonesploit"+Fore.RED + "(file_push) "+Fore.WHITE + "> ")
+            print (("     "+connect))
+            print (("    [{0}+{1}]Enter a file location on PC").format(Fore.RED, Fore.WHITE))
+            file_location = input("    "+arrow + "phonesploit"+Fore.RED + "(file_push) "+Fore.WHITE + "> ")
+            print (("        "+connect))
+            print (("       [{0}+{1}]Enter where you would like the file to be saved.[Default: /sdcard/ ]").format(Fore.RED, Fore.WHITE))
+            place_location = input("       "+arrow + "phonesploit"+Fore.RED + "(file_pull) "+Fore.WHITE + "> ")
+            os.system("adb -s "+device_name+" push "+file_location+ " /sdcard/" + place_location)
+
     elif option == '0':
         global page2
         if page2 is True:
@@ -759,6 +770,16 @@ def main_linux():
 
         elif option == '25':
             os.system("adb -s " +device_name+ " dumpsys activity")
+            option = input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
+        
+        elif option == '26':
+            print (("     "+connect))
+            print (("    [{0}+{1}]Enter a file location on PC").format(Fore.RED, Fore.WHITE))
+            file_location = input("    "+arrow + "phonesploit"+Fore.RED + "(file_push) "+Fore.WHITE + "> ")
+            print (("        "+connect))
+            print (("       [{0}+{1}]Enter where you would like the file to be saved.[Default: /sdcard/ ]").format(Fore.RED, Fore.WHITE))
+            place_location = input("       "+arrow + "phonesploit"+Fore.RED + "(file_push) "+Fore.WHITE + "> ")
+            os.system("adb -s "+device_name+" push "+file_location+ " /sdcard/" + place_location)
             option = input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
 
         elif option == '0':
