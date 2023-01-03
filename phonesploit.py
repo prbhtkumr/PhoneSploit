@@ -576,7 +576,7 @@ def main_linux():
             option = input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
 
         elif option == '13':
-            os.system("adb  -s "+device_name+" dumpsys")
+            os.system("adb  -s "+device_name+" shell dumpsys")
             option = input(Fore.WHITE + "phonesploit"+Fore.RED + "(main_menu) "+Fore.WHITE + "> ")
 
         elif option == '14':
@@ -814,7 +814,7 @@ platform = get_platform()
 #=============================  
 # Run
 
-if platform is 'Windows':
+if platform == 'Windows':
     try:
         init(convert=True)
         os.chdir(CurrentDir+"//adb")
