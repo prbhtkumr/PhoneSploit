@@ -27,6 +27,7 @@
 * Use Keycode   
 * Get Battery Status
 * Get Current Activity
+* Send file/folder from PC to Phone
 
 # Author's Note
 
