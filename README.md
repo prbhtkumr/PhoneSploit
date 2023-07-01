@@ -5,6 +5,7 @@
 ![FORKS](https://img.shields.io/github/forks/aerosol-can/PhoneSploit?style=social)
 ![COMMIT](https://img.shields.io/github/last-commit/aerosol-can/PhoneSploit)
 ![SIZE](https://img.shields.io/github/repo-size/aerosol-can/PhoneSploit)
+[![Sponser](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/G2G7MS0SJ)
 
 # Features
 * Access Shell
