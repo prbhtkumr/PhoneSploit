@@ -71,11 +71,11 @@ logo_design_4 = '''
 \033[92m
           +hydNNNNdyh+
         +mMMMMMMMMMMMMm+
-      `dMMm\033[0m:\033[92mNMMMMMMN\033[0m:\033[92mmMMd`
+      `dMMm\033[0m:\033[96mNMMMMMMN\033[0m:\033[92mmMMd`
       hMMMMMMMMMMMMMMMMMMh
-  \033[92m..  yyyyyyyyyyyyyyyyyyyy  ..                                     
-\033[92m.mMMm`MMMMMMMMMMMMMMMMMMMM`mMMm.            \033[0m Thanks for downloading!\033[92m
-\033[92m:MMMM-MMMMMMMMMMMMMMMMMMMM-MMMM:
+  \033[96m..  yyyyyyyyyyyyyyyyyyyy  ..                                     
+\033[96m.mMMm`MMMMMMMMMMMMMMMMMMMM`mMMm.            \033[0m Thanks for downloading!\033[92m
+\033[96m:MMMM-MMMMMMMMMMMMMMMMMMMM-MMMM:
 :MMMM-MMMMMMMMMMMMMMMMMMMM-MMMM:
 :MMMM-MMMMMMMMMMMMMMMMMMMM-MMMM:
 :MMMM-MMMMMMMMMMMMMMMMMMMM-MMMM:
