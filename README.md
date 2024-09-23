@@ -1,9 +1,9 @@
 
 
-![STARS](https://img.shields.io/github/stars/aerosol-can/PhoneSploit?style=social) 
-![FORKS](https://img.shields.io/github/forks/aerosol-can/PhoneSploit?style=social)
-![COMMIT](https://img.shields.io/github/last-commit/aerosol-can/PhoneSploit)
-![SIZE](https://img.shields.io/github/repo-size/aerosol-can/PhoneSploit)
+![STARS](https://img.shields.io/github/stars/prbhtkumr/PhoneSploit?style=social) 
+![FORKS](https://img.shields.io/github/forks/prbhtkumr/PhoneSploit?style=social)
+![COMMIT](https://img.shields.io/github/last-commit/prbhtkumr/PhoneSploit)
+![SIZE](https://img.shields.io/github/repo-size/prbhtkumr/PhoneSploit)
 [![Sponser](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/G2G7MS0SJ)
 
 ![Default_person_remotely_controlling_multiple_phones_dystopian_0](https://github.com/prbhtkumr/PhoneSploit/assets/50882504/fcd4a441-3c5f-4716-800e-31e353181036)
@@ -65,7 +65,7 @@
 
 # HOW TO INSTALL ON WINDOWS
 ```
-git clone https://github.com/aerosol-can/PhoneSploit
+git clone https://github.com/prbhtkumr/PhoneSploit
 ```
 extract adb.rar to the phonesploit directory 
 ```
@@ -77,7 +77,7 @@ phonesploit.py
 # HOW TO INSTALL ON Linux
 ```
 apt install adb
-git clone https://github.com/aerosol-can/PhoneSploit
+git clone https://github.com/prbhtkumr/PhoneSploit
 cd PhoneSploit
 pip3 install colorama
 python3 phonesploit.py
@@ -87,7 +87,7 @@ python3 phonesploit.py
 First of all, install [brew](https://brew.sh)
 ```
 brew install git python@3
-git clone https://github.com/aerosol-can/PhoneSploit
+git clone https://github.com/prbhtkumr/PhoneSploit
 cd PhoneSploit
 python3 -m pip install colorama
 python3 phonesploit.py
