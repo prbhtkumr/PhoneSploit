@@ -6,8 +6,7 @@
 ![SIZE](https://img.shields.io/github/repo-size/prbhtkumr/PhoneSploit)
 [![Sponser](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/G2G7MS0SJ)
 
-![Default_person_remotely_controlling_multiple_phones_dystopian_0](https://github.com/prbhtkumr/PhoneSploit/assets/50882504/fcd4a441-3c5f-4716-800e-31e353181036)
-
+<img width="1672" height="941" alt="Cyberpunk Mobile Control Room" src="https://github.com/user-attachments/assets/8339388d-298b-419e-94c0-501da1acf31f" />
 
 # PhoneSploit
 #### A tool for remote ADB exploitation in Python3.
